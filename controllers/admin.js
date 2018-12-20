@@ -52,7 +52,7 @@ exports.getProducts = (req, res, next) => {
         res.render('admin/products', {
             prods: products,
             pageTitle: 'All Products',
-            path: '/admin/add-products',
+            path: '/admin/products',
             hasProducts: products.length > 0,
         });
 
