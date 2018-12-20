@@ -76,10 +76,13 @@ main {
 
 .card__image {
   width: 100%;
+  text-align: center;
 }
 
 .card__image img {
-  width: 100%;
+  margin:0 auto;
+  width: 200px;
+  height: auto;
 }
 
 .card__actions {
