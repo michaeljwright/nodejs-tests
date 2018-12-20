@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const adminRoutes = require('./routes/admin');
-const userRoutes = require('./routes/user');
 const shopRoutes = require('./routes/shop');
 
 const errorController = require('./controllers/error');
@@ -19,8 +18,6 @@ app.use(bodyParser.urlencoded({ extended: false })); // middleware for body pars
 app.use(express.static('public')); // middleware to serve static files like stylesheets and javascript
 
 app.use('/admin', adminRoutes);
-
-app.use('/users', userRoutes);
 
 app.use(shopRoutes);
 
