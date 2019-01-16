@@ -1,7 +1,7 @@
 
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('nodejs_tests', 'root', null, {
+const sequelize = new Sequelize('trafficlights', 'root', null, {
     dialect: 'mysql',
     host: '127.0.0.1',
     operatorsAliases: false
